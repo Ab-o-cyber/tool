@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website offering a variety of image and PDF tools to optimize, convert, and manipulate your files.">
+    <meta name="keywords" content="image tools, pdf tools, file optimization, image compression, file conversion">
+    <meta name="author" content="Abdul Rehman">
+    <title>Tools Hub - Image & PDF Tools</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(45deg, #4e73df, #1cc88a);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 80px 20px;
+            margin-top: -20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        /* Tool Cards Section */
+        .tools-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 50px 20px;
+        }
+
+        .tool-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .tool-card img {
+            width: 80px;
+            height: 80px;
+            margin-top: 30px;
+        }
+
+        .tool-card h3 {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .tool-card p {
+            font-size: 0.9rem;
+            color: #777;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+
+        .tool-card button {
+            background-color: #4e73df;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .tool-card button:hover {
+            background-color: #1cc88a;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                padding: 40px 20px;
+            }
+
+            .tools-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .tool-card {
+                width: 100%;
+                max-width: 350px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Tools Hub</h1>
+        <p>Optimize, Convert & Manage Your Files Easily with Our Tools</p>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h2>Your One-Stop Shop for Image & PDF Tools</h2>
+            <p>Browse our collection of tools to convert, compress, and optimize your image and PDF files in a few simple steps.</p>
+        </div>
+    </div>
+
+    <!-- Tools Section -->
+    <section class="tools-container">
+        <!-- Tool Card 1 - Image Compression -->
+       <div class="tool-card">
+    <a href="/img-compress.html" style="text-decoration: none;">
+        <img src="https://via.placeholder.com/80" alt="Image Compression">
+        <h3>Image Compression</h3>
+        <p>Compress and reduce the size of your images without losing quality.</p>
+        <button>Use Tool</button>
+    </a>
+</div>
+
+
+        <!-- Tool Card 2 - PDF Converter -->
+        <div class="tool-card">
+            <img src="https://via.placeholder.com/80" alt="PDF Converter">
+            <h3>PDF Converter</h3>
+            <p>Convert your files to and from PDF format easily.</p>
+            <button onclick="location.href='pdf-converter.html'">Use Tool</button>
+        </div>
+
+        <!-- Tool Card 3 - PDF Compressor -->
+        <div class="tool-card">
+            <img src="https://via.placeholder.com/80" alt="PDF Compressor">
+            <h3>PDF Compressor</h3>
+            <p>Reduce the size of your PDFs without losing quality.</p>
+            <button onclick="location.href='pdf-compressor.html'">Use Tool</button>
+        </div>
+
+        <!-- Tool Card 4 - Image Resizer -->
+        <div class="tool-card">
+            <img src="https://via.placeholder.com/80" alt="Image Resizer">
+            <h3>Image Resizer</h3>
+            <p>Resize images for different formats and resolutions.</p>
+            <button onclick="location.href='image-resizer.html'">Use Tool</button>
+        </div>
+
+        <!-- Tool Card 5 - PDF Splitter -->
+        <div class="tool-card">
+            <img src="https://via.placeholder.com/80" alt="PDF Splitter">
+            <h3>PDF Splitter</h3>
+            <p>Split large PDFs into smaller, manageable files.</p>
+            <button onclick="location.href='pdf-splitter.html'">Use Tool</button>
+        </div>
+
+        <!-- Tool Card 6 - Image to PDF Converter -->
+        <div class="tool-card">
+            <img src="https://via.placeholder.com/80" alt="Image to PDF">
+            <h3>Image to PDF</h3>
+            <p>Convert your images into a single PDF file.</p>
+            <button onclick="location.href='image-to-pdf.html'">Use Tool</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Tools Hub. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
